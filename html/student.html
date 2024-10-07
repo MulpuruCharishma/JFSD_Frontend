@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Student Dashboard</title>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <style>
+#main{ 
+	width:100%; 
+	height:100vh; 
+} 
+
+.left-column{ 
+	float:left; 
+	width: 21%;
+     height: 100vh;
+     background-color: #F1F2F7;
+}
+
+.right-column{ 
+	float:right; 
+	width: 79%;
+     height: 100vh;
+     background-color: white;
+}
+
+.fa-bell{
+     font-size: 20px;
+     margin-right: 20px;
+     margin-left: 20px;
+     float: right;
+}
+
+.right-column h5{
+     margin-top: 20px;
+     margin: 20px;
+     text-align: right;
+     font-size: 18px;
+}
+
+.logo{
+     margin-left: 4px;
+     margin-top: 4px;
+     width: 270px;
+     height: 62px;
+     border-radius: 15px;
+     padding: 1.8px;
+     padding-bottom: 5px;
+}
+
+.logo:hover{
+     cursor: pointer;
+}
+
+p{
+     display: inline-block;
+     font-size: 18px;
+     margin-left: 15px;
+}
+
+.fa-solid{
+     font-size: 25px;
+     margin-right: 10px;
+}
+
+.right-column img{
+     margin-top: 120px;
+     margin-left: 300px;
+}
+
+     </style> 
+  </head> 
+  <body>
+     <div id="main"> 
+          <div class="left-column"> 
+               <div class="logo">
+                    <a href="home.html"><img src="/images/logo.jpg" alt="Portfolyx" class="logo"></a>
+               </div>
+               <div class="div" style="font-size: 23px;margin-top: 20px;margin-left:15px;margin-bottom: 15px; color: #545b63;">Menu
+               </div>     
+               <div class="div" style="cursor: pointer;background-color: #c1caff;border: 0.3px solid black; border-radius: 18px;">
+               <p><a href="student.html"><i class="fa-solid fa-square-poll-vertical"></i>Dashboard</a></p>
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/student/project.html"><i class="fa-solid fa-upload"></i>Upload Project</a></p>
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/student/portfolio.html"><i class="fa-solid fa-cloud-arrow-up"></i>Upload Portfolio</a></p>
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/student/milestones.html"><i class="fa-solid fa-message"></i>Milestones</a></p>
+               </div>
+               <div class="div" style="font-size: 23px;margin-top: 23px;margin-left:15px;margin-bottom: 15px; color: #545b63;">Others
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/student/account.html"><i class="fa-solid fa-child fa-2xl"></i>Account</a></p>
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/student/groups.html"><i class="fa-solid fa-user-group"></i>Groups</a></p>
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="login.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></p>
+               </div>
+          </div> 
+          <div class="right-column"> 
+               <div>
+               <i class="fa-solid fa-bell"></i>
+               <h5><i class="fa-regular fa-image"></i>  Student Name</h5>
+               </div>
+               <img src="/images/student.jpg" alt="Student" style="width: 40%; height: 40%;">
+          </div> 
+     </div>
+  </body>
+</html>

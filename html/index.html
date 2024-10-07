@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolyx - Home</title>
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+          @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Raleway:wght@100&display=swap');
+
+          @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Raleway:wght@500&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+}
+
+body{
+     font-family: "Merriweather", serif;
+     background-color: #e2e7f2;
+}
+
+html{
+     scroll-behavior: smooth;
+}
+
+p{
+     color: rgb(85, 85, 85);
+}
+
+nav, .navlinks{
+     display: flex;
+}
+
+nav{
+     align-items: center;
+     justify-content: space-between;
+     height: 10vh;
+     border: 1px solid black;
+     background-color: rgb(188, 190, 246);
+     border-radius: 28px;
+     margin-left: 80px;
+     margin-right: 80px;
+     margin-top: 30px;
+     padding-right: 40px;
+}
+
+.navlinks{
+     gap: 2rem;
+     list-style: none;
+     font-size: 1.3rem;
+}
+
+a{
+     color: black;
+     text-decoration: none;
+     text-decoration-color: white;
+}
+
+a:hover{
+     color: rgb(30, 9, 165);
+     text-decoration: underline;
+     text-underline-offset: 1rem;
+     text-decoration-color: rgb(74, 74, 74);
+}
+
+.logo{
+     margin-left: 6px;
+     width: 270px;
+     padding-top: 2px;
+     border-radius: 15px;
+}
+
+.logo:hover{
+     cursor: pointer;
+}
+
+.heading{
+     text-align: center;
+     margin-top: 8vh;
+     font-size: 40px;
+     color: rgb(74, 74, 74);
+}
+
+.heading h3{
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 32px;
+     color: rgb(85, 85, 85);
+     font-family: "Bodoni Moda";
+}
+
+.headingcontent{
+     text-align: center;
+     margin-top: 5vh;
+     font-size: 24px;
+     color: rgb(85, 85, 85);
+     margin-left: 100px;
+     margin-right: 100px;
+     font-family: "raleway";
+}
+
+button{
+     margin-left: 40%;
+     margin-right: 25%;
+     margin-top: 6vh;
+     padding: 13px;
+     font-size: 26px;
+     border-radius: 10px;
+     background-color: rgb(188, 190, 246);
+     color: black;
+     border: 1px solid black;
+     cursor: pointer;
+     transition: 0.3s;
+}
+
+.clouds_bottom{
+     width: 98.8vw;
+     height: 50vh;
+     object-fit: cover;
+}
+
+.gradient{
+     width: 98.8vw;
+     height: 140px;
+     background-size: cover;
+     page-break-after: always;
+     background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.head{
+     page-break-before: always;
+     background-color: white;
+     border-radius: 28px;
+     margin-left: 70px;
+     margin-right: 70px;
+     padding: 20px;
+     border: 1px solid black;
+}
+
+.about{
+     text-align: center;
+     font-size: 35px;
+     margin-left: 40px;
+     margin-right: 40px;
+     font-family: "raleway";
+     padding: 30px;
+}
+
+.about p{
+     font-size: 24px;
+     color: rgb(85, 85, 85);
+     font-family: "raleway";
+     padding-top: 30px;
+}
+
+.team{
+     text-align: center;
+     font-size: 35px;
+     margin-left: 40px;
+     margin-right: 40px;
+     font-family: "raleway";
+     padding: 30px;
+     padding-top: 38px;
+}
+
+.team h1{
+     margin-bottom: 30px;
+}
+
+.mentor h2{
+     font-size: 30px;
+     color: rgb(85, 85, 85);
+     font-family: "raleway";
+     padding-bottom: 15px;
+}
+
+.mentor p{
+     font-size: 20px;
+     color: rgb(85, 85, 85);
+     font-family: "raleway";
+     padding-bottom: 60px;
+     margin-left: 60px;
+     margin-right: 60px;
+}
+
+.mentor #p1{
+     font-size: 24px;
+     color: rgb(85, 85, 85);
+     font-family: "raleway";
+     padding-bottom: 20px;
+}
+
+.mentor img{
+     width: 300px;
+     height: 300px;
+     border-radius: 50%;
+     padding-bottom: 20px;
+}
+
+.member{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: space-evenly;
+     min-height: 75px;
+     height: fit-content;
+     width: 100%;
+}
+
+.member h2{
+     font-size: 30px;
+     color: rgb(85, 85, 85);
+     font-family: "raleway";
+}
+
+.member p{
+     font-size: 24px;
+     color: rgb(85, 85, 85);
+     font-family: "raleway";
+     padding-top: 10px;
+}
+
+.member img{
+     width: 250px;
+     height: 250px;
+     border-radius: 50%;
+     padding-bottom: 20px;
+}
+
+.member {
+  float: left;
+  width: 30.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.footer { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+}
+
+
+</style>
+</head>
+<body>
+     <nav id="navbar">
+          <div class="logo">
+               <a href="home.html"><img src="/images/logo.jpg" alt="Portfolyx" class="logo"></a>
+          </div>
+          <div>
+               <ul class="navlinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+               </ul>
+          </div>
+          </nav>
+     <div class="heading">
+          <h1>Welcome to Portfolyx</h1>
+          <h3>The One Stop Solution for Managing Student Projects and Portfolios!</h3>
+     </div>
+     <div class="headingcontent">
+          <p>Easily showcase your academic and personal projects, organize your work, and track your progress with ease. Whether you're a student building a professional portfolio or an educator reviewing multiple projects, Portfolyx streamlines the process for everyone. Start managing your projects, monitor milestones, and display your achievements effortlessly!</p>
+     </div>
+     <button><a href="signup.html">Sign up now to get started!</a></button>
+     <img src="/images/clouds.webp" alt="Transparent clouds modular" class="clouds_bottom">
+     <div class="gradient"></div>
+     
+     <header class="head">
+          <div class="about">
+               <h1>About Us</h1>
+               <p>Portfolyx is a project management platform designed to help students and educators manage their projects and portfolios with ease. Our platform allows students to showcase their academic and personal projects, organize their work, and track their progress. Educators can use Portfolyx to review multiple projects, monitor milestones, and provide feedback to students. Whether you're a student building a professional portfolio or an educator managing student projects, Portfolyx streamlines the process for everyone. Sign up today to start managing your projects, monitoring milestones, and displaying your achievements effortlessly!</p>
+          </div>
+          <div class="team">
+               <h1>Meet Our Team</h1>
+               <div class="mentor">
+                    <a href="https://www.linkedin.com/in/suryakiran1993/" target="_blank"><img src="/images/JSKSir.jpg" alt="JSK SIR"></a>
+                    <h2>Mr. Jonnalagadda Surya Kiran</h2>
+                    <p id="p1">Project Mentor , Assistant Professor - KL University</p>
+                    <p>Meet our remarkable mentor, whose unwavering dedication and expertise have profoundly shaped our learning journey. With years of teaching experience, he inspires not only us but countless students to achieve their fullest potential. His passion for mentorship and steadfast support make him an invaluable asset to our team. We are truly grateful for his guidance and proud to have him by our side!</p>
+               </div>
+               <div class="row">               <div class="member">
+                    <a href="https://www.linkedin.com/in/alla-kavya-reddy/" target="_blank"><img src="/images/kavya.png" alt="Kavya"></a>
+                    <h2>Alla Kavya</h2>
+                    <p>Contributor</p>
+               </div>
+               <div class="member">
+                    <a href="https://www.linkedin.com/in/telaprolu-roopa-sri-lakshmi-sai/" target="_blank"><img src="/images/roopa.jpg" alt="Roopa"></a>
+                    <h2>Roopa Telaprolu</h2>
+                    <p>Contributor</p>
+               </div>
+               <div class="member">
+                    <a href="https://www.linkedin.com/in/mulpuru-charishma-11312a261/" target="_blank"><img src="/images/charishma.jpg" alt="Charishma"></a>
+                    <h2>Mulpuru Charishma</h2>
+                    <p>Contributor</p>
+               </div>
+               </div>
+          </div>
+     </header>
+     <footer>
+          <p style="font-size: 50px; color: #e2e7f2;">
+               &copy; 2021 Portfolyx. All rights reserved.
+          </p>
+     </footer>
+     <script src="script.js"></script>
+</body>
+</html>

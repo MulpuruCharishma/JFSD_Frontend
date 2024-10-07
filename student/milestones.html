@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Milestones</title>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+     <style>
+#main{ 
+	width:100%; 
+	height:100vh; 
+} 
+
+.left-column{ 
+	float:left; 
+	width: 21%;
+     height: 100vh;
+     background-color: #F1F2F7;
+}
+
+.middle-column{
+     float:left; 
+     width: 59%;
+     height: 100vh;
+     background-color: white;
+}
+
+.right-column{ 
+	float:right; 
+	width: 20%;
+     height: 100vh;
+     background-color: white;
+}
+
+.fa-bell{
+     font-size: 20px;
+     margin-right: 20px;
+     margin-left: 20px;
+     float: right;
+}
+
+.logo{
+     margin-left: 4px;
+     margin-top: 4px;
+     width: 270px;
+     height: 62px;
+     border-radius: 15px;
+     padding: 1.8px;
+     padding-bottom: 5px;
+}
+
+.logo:hover{
+     cursor: pointer;
+}
+
+p{
+     display: inline-block;
+     font-size: 18px;
+     margin-left: 15px;
+}
+
+.fa-solid{
+     font-size: 25px;
+     margin-right: 10px;
+}
+
+.right-column h5{
+     margin-top: 20px;
+     margin: 20px;
+     text-align: right;
+     font-size: 18px;
+}
+
+.middle-container{
+     margin-top: 20px;
+     margin-left: 40px;
+     margin-right: 20px;
+     margin-bottom: 40px;
+     width: 85%;
+     height: 79%;
+     padding: 20px;
+     border: 1px solid black;
+     border-radius: 15px;
+}
+
+.right-container{
+     float: right;
+     margin-top: 20px;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-bottom: 20px;
+     width: 230px;
+     height: 540px;
+     padding: 20px;
+     border: 1px solid black;
+     border-radius: 15px;
+     text-align: center;
+     background-color: #F1F2F7;
+     font-size: 20px;
+}
+
+.assigned{
+     float: left;
+     margin-top: 20px;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-bottom: 20px;
+     width: 165px;
+     height: 80px;
+     padding: 20px;
+     border: 1px solid black;
+     border-radius: 15px;
+     text-align: left;
+     background-color: #F1F2F7;
+}
+
+.assigned p{
+     font-size: 25px;
+     margin-top: 10px;
+     margin-left: 20px;
+     padding-left: 13px;
+     margin-right: 10px;
+     padding-bottom: 18px;
+     text-align: center;
+}
+
+.uploaded{
+     float: left;
+     margin-top: 20px;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-bottom: 20px;
+     width: 165px;
+     height: 80px;
+     padding: 20px;
+     border: 1px solid black;
+     border-radius: 15px;
+     text-align: center;
+     background-color: #F1F2F7;
+     font-size: 20px;
+}
+
+.uploaded p{
+     font-size: 25px;
+     margin-top: 10px;
+     margin-left: 20px;
+     padding-right: 13px;
+     margin-right: 10px;
+     padding-bottom: 18px;
+     text-align: center;
+}
+
+.reviewed{
+     float: left;
+     margin-top: 20px;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-bottom: 20px;
+     width: 165px;
+     height: 80px;
+     padding: 20px;
+     border: 1px solid black;
+     border-radius: 15px;
+     text-align: center;
+     background-color: #F1F2F7;
+     font-size: 20px;
+}
+
+.reviewed p{
+     font-size: 25px;
+     margin-top: 10px;
+     margin-left: 20px;
+     padding-right: 13px;
+     margin-right: 10px;
+     padding-bottom: 18px;
+     text-align: center;
+}
+
+.graph{
+     float: left;
+     margin-top: 20px;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-bottom: 20px;
+     width: 670px;
+     height: 300px;
+     padding: 20px;
+     border: 1px solid black;
+     border-radius: 15px;
+     text-align: left;
+     background-color: #F1F2F7;
+     font-size: 20px;
+}
+
+.ph-fill{
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-bottom: 20px;
+     padding: 20px;
+     background-color: #F1F2F7;
+     font-size: 270px;
+}
+
+.graph-comp{
+     float: right;
+     margin-top: 100px;
+     margin-right: 100px;
+     margin-bottom: 40px;
+}
+
+.fa-square{
+     font-size: 30px;
+     margin-right: 10px;
+}
+
+
+     </style> 
+  </head> 
+  <body>
+     <div id="main"> 
+          <div class="left-column"> 
+               <div class="logo">
+                    <a href="home.html"><img src="/images/logo.jpg" alt="Portfolyx" class="logo"></a>
+               </div>
+               <div class="div" style="font-size: 23px;margin-top: 20px;margin-left:15px;margin-bottom: 15px; color: #545b63;">Menu
+               </div>     
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/html/student.html"><i class="fa-solid fa-square-poll-vertical"></i>Dashboard</a></p>
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/student/project.html"><i class="fa-solid fa-upload"></i>Upload Project</a></p>
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/student/portfolio.html"><i class="fa-solid fa-cloud-arrow-up"></i>Upload Portfolio</a></p>
+               </div>
+               <div class="div" style="cursor: pointer;background-color: #c1caff;border: 0.3px solid black; border-radius: 18px;">
+               <p><a href="/student/milestones.html"><i class="fa-solid fa-message"></i>Milestones</a></p>
+               </div>
+               <div class="div" style="font-size: 23px;margin-top: 23px;margin-left:15px;margin-bottom: 15px; color: #545b63;">Others
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/student/account.html"><i class="fa-solid fa-child fa-2xl"></i>Account</a></p>
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/student/groups.html"><i class="fa-solid fa-user-group"></i>Groups</a></p>
+               </div>
+               <div class="div" style="cursor: pointer;">
+               <p><a href="/html/login.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></p>
+               </div>
+          </div>
+          <div class="middle-column">
+               <h2 style="margin-left: 30px;margin-top: 30px;">Statistics</h2>
+               <div class="middle-container">
+                    <div class="assigned">
+                         <p>2 <br>Assigned</p>
+                    </div>
+                    <div class="uploaded">
+                         <p>1 <br>Uploaded</p>
+                    </div>
+                    <div class="reviewed">
+                         <p>1 <br>Reviewed</p>
+                    </div>
+                    <div class="graph">
+                         <i class="ph-fill ph-chart-pie-slice"></i>
+                         <div class="graph-comp">
+                         <i class="fa-solid fa-square"></i>
+                         <p>Completed</p>
+                         <br>
+                         <i class="fa-regular fa-square"></i>
+                         <p>Pending</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="right-column"> 
+               <div>
+               <i class="fa-solid fa-bell"></i>
+               <h5><i class="fa-regular fa-image"></i>  Student Name</h5>
+               </div>
+               <div class="right-container">Feedback of the Admin</div>
+          </div>
+     </div>
+  </body>
+</html>
